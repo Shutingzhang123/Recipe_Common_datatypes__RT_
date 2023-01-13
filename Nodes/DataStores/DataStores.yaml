@@ -1,0 +1,181 @@
+Name: DataStores
+Type: FolderType
+Children:
+- Name: EmbeddedDatabase1
+  Id: g=f5212ccede8c36983f16a8764fb1e273
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: RecipeSchema1
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /VarBool
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: /VarFloat
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /VarInt
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /VarString
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /VarDuration
+          Type: StoreColumn
+          DataType: Duration
+          Value: "0:00:00:0.0000000"
+        - Name: /ArrBool_0
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: /ArrBool_1
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: /ArrBool_2
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: /ArrFloat_0
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /ArrFloat_1
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /ArrFloat_2
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /ArrInt_0
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /ArrInt_1
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /ArrInt_2
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /ArrString_0
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /ArrString_1
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /ArrString_2
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /ArrDuration_0
+          Type: StoreColumn
+          DataType: Duration
+          Value: "0:00:00:0.0000000"
+        - Name: /ArrDuration_1
+          Type: StoreColumn
+          DataType: Duration
+          Value: "0:00:00:0.0000000"
+        - Name: /ArrDuration_2
+          Type: StoreColumn
+          DataType: Duration
+          Value: "0:00:00:0.0000000"
+        - Name: /Motor/Acc
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Motor/Speed
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+  - Class: Reference
+    Target: ns=17;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=15;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=59
+    Direction: Forward

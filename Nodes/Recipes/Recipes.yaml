@@ -1,0 +1,380 @@
+Name: Recipes
+Type: FolderType
+Children:
+- Name: RecipeSchema1
+  Id: g=61895e91a90f482caef2938a84b9cb0f
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+    Children:
+    - Name: VarBool
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: VarFloat
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+    - Name: VarInt
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: VarString
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: VarDuration
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "0:00:00:0.0000000"
+    - Name: ArrBool
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ValueRank: OneDimension
+      ArrayDimensions: [3]
+      Value: [false,false,false]
+    - Name: ArrFloat
+      Type: BaseDataVariableType
+      DataType: Float
+      ValueRank: OneDimension
+      ArrayDimensions: [3]
+      Value: [0.0,0.0,0.0]
+    - Name: ArrInt
+      Type: BaseDataVariableType
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [3]
+      Value: [0,0,0]
+    - Name: ArrString
+      Type: BaseDataVariableType
+      DataType: String
+      ValueRank: OneDimension
+      ArrayDimensions: [3]
+      Value: ["","",""]
+    - Name: ArrDuration
+      Type: BaseDataVariableType
+      DataType: Duration
+      ValueRank: OneDimension
+      ArrayDimensions: [3]
+      Value: ["0:00:00:0.0000000","0:00:00:0.0000000","0:00:00:0.0000000"]
+    - Name: Motor
+      Type: BaseObjectType
+      Children:
+      - Name: Acc
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: Speed
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+  - Class: Reference
+    Target: ns=12;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=60
+    Direction: Forward
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"24a0bb8729e2083c7518b8fa72f064d3","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"f5212ccede8c36983f16a8764fb1e273","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":15}
+  - Name: RecipeApplicationEventHandler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":73,"Namespace":12}
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=2;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":58}
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../Commands/VariableCommands@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=2;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
+            Value: {"IdType":2,"Id":"93990599d09e96d56f6297733e1e9552","Namespace":7}
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
+            Value: false
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../EventArguments/Status"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ArrayIndex
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":2,"TextId":"SetArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+            Value: 0
+      - Name: MethodContainer2
+        Type: BaseObjectType
+        Children:
+        - Name: ns=2;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":58}
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../Commands/VariableCommands@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=2;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
+            Value: {"IdType":2,"Id":"074319fa23d243bcd36cffd9caa22e41","Namespace":7}
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: String
+            Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
+            Value: ""
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../EventArguments/RecipeName"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ArrayIndex
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":2,"TextId":"SetArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+            Value: 0
+    - Name: EventArguments
+      Type: RecipeApplicationEvent
+      Children:
+      - Name: RecipeName
+        Type: PropertyType
+        DataType: String
+        Value: ""
+      - Name: DestinationNode
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: MethodId
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: InputArguments
+        Type: PropertyType
+        DataType: BaseDataType
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+      - Name: ActionTimeStamp
+        Type: PropertyType
+        DataType: UtcTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: Status
+        Type: PropertyType
+        DataType: Boolean
+        Value: false
+      - Name: ServerId
+        Type: PropertyType
+        DataType: String
+        Value: ""
+      - Name: ClientAuditEntryId
+        Type: PropertyType
+        DataType: String
+        Value: ""
+      - Name: ClientUserId
+        Type: PropertyType
+        DataType: String
+        Value: ""
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+        Value: ""
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+        Value: ""
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16
+        Value: 0
+  - Name: EditModel
+    Id: g=94f8b1653260228838aed3ba2b171389
+    Type: BaseObjectType
+    Children:
+    - Name: VarBool
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: VarFloat
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+    - Name: VarInt
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: VarString
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: VarDuration
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "0:00:00:0.0000000"
+    - Name: ArrBool
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ValueRank: OneDimension
+      ArrayDimensions: [3]
+      Value: [false,false,false]
+    - Name: ArrFloat
+      Type: BaseDataVariableType
+      DataType: Float
+      ValueRank: OneDimension
+      ArrayDimensions: [3]
+      Value: [0.0,0.0,0.0]
+    - Name: ArrInt
+      Type: BaseDataVariableType
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [3]
+      Value: [0,0,0]
+    - Name: ArrString
+      Type: BaseDataVariableType
+      DataType: String
+      ValueRank: OneDimension
+      ArrayDimensions: [3]
+      Value: ["","",""]
+    - Name: ArrDuration
+      Type: BaseDataVariableType
+      DataType: Duration
+      ValueRank: OneDimension
+      ArrayDimensions: [3]
+      Value: ["0:00:00:0.0000000","0:00:00:0.0000000","0:00:00:0.0000000"]
+    - Name: Motor
+      Type: BaseObjectType
+      Children:
+      - Name: Acc
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: Speed
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0

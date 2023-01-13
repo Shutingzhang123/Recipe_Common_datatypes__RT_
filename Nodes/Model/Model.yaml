@@ -1,0 +1,87 @@
+Name: Model
+Id: g=24a0bb8729e2083c7518b8fa72f064d3
+Type: FolderType
+Children:
+- Name: VarBool
+  Id: g=6964e66a3958c9cdba7d88486856ce55
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: VarFloat
+  Id: g=7776cfb576a21c2a5bb49ac91eda1f50
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: VarInt
+  Id: g=0f8ca800830a6bc3302243dfe09642c8
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: VarString
+  Id: g=3a85dbaf0bbe3c068e1e83c1306e1bf5
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: VarDuration
+  Id: g=c11c72fed7a71a3d7d2a248daba983b8
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:00:0.0000000"
+- Name: ArrBool
+  Id: g=f8e5f44154a4edd0b8b3330ea0d1c948
+  Type: BaseDataVariableType
+  DataType: Boolean
+  ValueRank: OneDimension
+  ArrayDimensions: [3]
+  Value: [false,false,false]
+- Name: ArrFloat
+  Id: g=e6b161d14c233777304f7f168c54e54a
+  Type: BaseDataVariableType
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [3]
+  Value: [0.0,0.0,0.0]
+- Name: ArrInt
+  Id: g=ede7f53da282edad7849416761130b38
+  Type: BaseDataVariableType
+  DataType: Int32
+  ValueRank: OneDimension
+  ArrayDimensions: [3]
+  Value: [0,0,0]
+- Name: ArrString
+  Id: g=30ede0a9c2a6147094778a64cc17153f
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [3]
+  Value: ["0","0","0"]
+- Name: ArrDuration
+  Id: g=ef4eeb2781bb01bcf9538a1058bf37c2
+  Type: BaseDataVariableType
+  DataType: Duration
+  ValueRank: OneDimension
+  ArrayDimensions: [3]
+  Value: ["0:00:00:0.0000000","0:00:00:0.0000000","0:00:00:0.0000000"]
+- Name: Motor
+  Type: BaseObjectType
+  Children:
+  - Name: Acc
+    Id: g=49ffbacf707f8d9f8efd81f970dde08c
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Speed
+    Id: g=140d4f67e2a1e53464f011ea53bc7c06
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: Status
+  Id: g=93990599d09e96d56f6297733e1e9552
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: RecipeName
+  Id: g=074319fa23d243bcd36cffd9caa22e41
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
